@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppUpt">
         <activity
+            android:name=".Tercera_Interfaz_de_reporte"
+            android:exported="false" />
+        <activity
             android:name=".Segunda_Interfaz_de_reporte"
             android:exported="false" />
         <activity
