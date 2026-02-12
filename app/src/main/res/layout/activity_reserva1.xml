@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Reserva de Gimnasio UPT"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#7A0C0C"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            android:radius="16dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:hint="Nombre completo"
+                    android:padding="12dp"
+                    android:drawableStart="@android:drawable/ic_menu_myplaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
