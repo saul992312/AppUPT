@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goldman"
+        android:text="BIENVENIDO"
+        android:textColor="#D4AF37"
+        android:textColorLink="#D4AF37"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/documentos"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_regular"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente_documentacion"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="191dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -46,4 +46,6 @@
     <string name="reporte">Reporte</string>
     <string name="descripcion">Descripción</string>
     <string name="siguiente">Siguiente</string>
+    <string name="documentos">Para poder reservar el gimnasio debes subir\nlos siguientes documentos.</string>
+    <string name="siguiente_documentacion">LA SIGUIENTE DOCUMENTACIÓN\nSE SUBE EN UN SOLO PDF.</string>
 </resources>
