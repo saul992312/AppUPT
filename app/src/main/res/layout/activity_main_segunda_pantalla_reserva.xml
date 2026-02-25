@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- HEADER LOGOS -->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/logo_upt" />
+        </LinearLayout>
+
+        <!-- TITULO -->
+        <TextView
+            android:text="Reserva de Gimnasio UPT"
+            android:textSize="32sp"
+            android:fontFamily="@font/goldman"
+            android:textColor="@color/titile_colors"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- CARD FORM -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:hint="Nombre completo"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/etMatricula"
+                    android:hint="Matrícula"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
+                    android:padding="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Fecha de reserva"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/goldman"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar fecha"
+                    android:backgroundTint="#7A0C0C"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:text="Hora de reserva"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/goldman"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar hora"
+                    android:backgroundTint="#7A0C0C"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/btnReservar"
+                    android:text="CONFIRMAR RESERVA"
+                    android:textSize="16sp"
+                    android:backgroundTint="#7A0C0C"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
