@@ -46,4 +46,9 @@
     <string name="reporte">Reporte</string>
     <string name="descripcion">Descripción</string>
     <string name="siguiente">Siguiente</string>
+    <string name="adjuntar_evidencia">Adjuntar evidencia</string>
+    <string name="enviar">Enviar</string>
+    <string name="fecha">Fecha:</string>
+    <string name="salon">Salón:</string>
+    <string name="edificio">Edificio:</string>
 </resources>
