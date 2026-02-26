@@ -51,4 +51,5 @@
     <string name="fecha">Fecha:</string>
     <string name="salon">Salón:</string>
     <string name="edificio">Edificio:</string>
+    <string name="historial_reportes">Hitorial de Reportes</string>
 </resources>
