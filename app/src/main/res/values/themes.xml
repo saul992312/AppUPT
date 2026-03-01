@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.AppUpt" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#7A0C0C</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
     </style>
 
     <style name="Theme.AppUpt" parent="Base.Theme.AppUpt" />
+    <style name="ThemeOverlay.ReservaPicker" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">#7A0C0C</item>
+        <item name="colorSecondary">#D4AF37</item>
+    </style>
 </resources>
