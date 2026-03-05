@@ -8,11 +8,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Primer_java_reserva extends AppCompatActivity {
-    private static  final int PICK_FILE = 1;
+    private static final int PICK_FILE = 1;
     private String tipoArchivo = " ";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_primera_pantalla_reserva);
 
@@ -41,7 +41,7 @@ public class Primer_java_reserva extends AppCompatActivity {
         credencial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tipoArchivo  = "CREDENCIAL";
+                tipoArchivo = "CREDENCIAL";
                 abrirSelector();
             }
         });
@@ -55,10 +55,23 @@ public class Primer_java_reserva extends AppCompatActivity {
         });
     }
 
-    private void abrirSelector(){
+    private void abrirSelector() {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType("application/pdf");
         startActivityForResult(intent, PICK_FILE);
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == PICK_FILE && resultCode == RESULT_OK && data != null) {
+            Uri uri = data.getData();
+
+            if (uri != null) {
+                System.out.println("Archivo seleccionado para: " + tipoArchivo);
+                System.out.println("Ruta del archivo: " + uri.toString());
+            }
+        }
     }
 }
