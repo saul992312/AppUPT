@@ -57,5 +57,8 @@ public class Primer_java_reserva extends AppCompatActivity {
 
     private void abrirSelector(){
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("application/pdf");
+        startActivityForResult(intent, PICK_FILE);
+
     }
 }
