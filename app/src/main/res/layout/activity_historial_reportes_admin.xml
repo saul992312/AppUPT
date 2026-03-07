@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTituloHistorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/goldman"
+        android:text="@string/historial_reportes"
+        android:textColor="@color/titile_colors"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Filtro tipo -->
+    <Spinner
+        android:id="@+id/spinnerFiltro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloHistorial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Selector fecha -->
+    <Button
+        android:id="@+id/btnSeleccionarFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Fecha"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerFiltro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Lista historial -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistorial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSeleccionarFecha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
